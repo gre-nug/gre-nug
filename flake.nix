@@ -8,7 +8,7 @@
 
     in {
         apps.${system} = let
-            generate = "${pkgs.slweb}/bin/slweb index.slw > public/index.html";
+            generate = "${pkgs.slweb}/bin/slweb src/index.slw > public/index.html";
 
         in {
             default = {

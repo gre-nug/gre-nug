@@ -1,0 +1,32 @@
+---
+site-name: GreNUG - Grenoble Nix User Group
+site-desc: My first website in slweb
+
+add-image-links: 0
+---
+
+<!-- vim: ft=markdown -->
+
+{main}
+![](logo_small.png)
+
+# Grenoble Nix User Group
+
+Bienvenue sur la page web de GreNUG, le groupe des utilisateurs grenoblois de Nix.<br>
+L'objectif est de se rassembler pour échanger et apprendre autour de Nix et NixOS.
+
+
+- **Salon Matrix:** [grenug:matrix.org](https://matrix.to/#/#grenug:matrix.org)
+- **Mastodon:** <a rel="me" href="https://mastodon.social/@grenug">@grenug@mastodon.social</a>
+- **email:** [mail@grenug.fr](mailto:mail@grenug.fr)
+
+<br>
+---
+{include "events"}
+
+
+<br>
+---
+{include "footer"}
+
+{/main}
