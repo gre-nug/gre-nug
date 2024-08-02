@@ -35,7 +35,7 @@
 
                 rsync -rv --delete \
                   public/ \
-                  server:/var/www/grenug/
+                  vps:/var/www/grenug/
               '';
             }
             {
