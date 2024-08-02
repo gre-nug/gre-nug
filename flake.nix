@@ -1,32 +1,49 @@
 {
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-
-  outputs = {
-    self,
-    nixpkgs,
-  }: let
-    system = "x86_64-linux";
-    pkgs = import nixpkgs {inherit system;};
-  in {
-    apps.${system} = let
-      generate = "${pkgs.slweb}/bin/slweb src/index.slw > public/index.html";
-    in {
-      default = {
-        type = "app";
-        program = toString (pkgs.writeShellScript "generate" generate);
-      };
-
-      deploy = {
-        type = "app";
-        program = toString (pkgs.writeShellScript "deploy" ''
-          set -e
-          ${generate}
-
-          ${pkgs.rsync}/bin/rsync -rv --delete \
-              public/ \
-              server:/var/www/grenug/
-        '');
-      };
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    devshell = {
+      url = "github:numtide/devshell";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
+
+  outputs = inputs @ {flake-parts, ...}:
+    flake-parts.lib.mkFlake {inherit inputs;} {
+      imports = [
+        inputs.devshell.flakeModule
+      ];
+
+      systems = ["x86_64-linux"];
+
+      perSystem = {
+        config,
+        pkgs,
+        ...
+      }: {
+        formatter = pkgs.alejandra;
+        devshells.default = {
+          packages = with pkgs; [
+            slweb
+            rsync
+          ];
+
+          commands = [
+            {
+              name = "deploy";
+              command = ''
+                generate
+
+                rsync -rv --delete \
+                  public/ \
+                  server:/var/www/grenug/
+              '';
+            }
+            {
+              name = "generate";
+              command = "slweb src/index.slw > public/index.html";
+            }
+          ];
+        };
+      };
+    };
 }
