@@ -12,14 +12,14 @@
   };
 
   outputs =
-    inputs@{ flake-parts, ... }:
+    inputs@{ flake-parts, nixpkgs, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
         inputs.devshell.flakeModule
         inputs.treefmt-nix.flakeModule
       ];
 
-      systems = [ "x86_64-linux" ];
+      systems = nixpkgs.lib.systems.flakeExposed;
 
       perSystem =
         {
