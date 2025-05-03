@@ -5,10 +5,6 @@
       url = "github:numtide/devshell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    treefmt-nix = {
-      url = "github:numtide/treefmt-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =
@@ -16,7 +12,6 @@
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
         inputs.devshell.flakeModule
-        inputs.treefmt-nix.flakeModule
       ];
 
       systems = nixpkgs.lib.systems.flakeExposed;
@@ -28,13 +23,7 @@
           ...
         }:
         {
-          treefmt.config = {
-            projectRootFile = "flake.nix";
-            flakeCheck = true;
-            programs = {
-              nixfmt.enable = true;
-            };
-          };
+          formatter = pkgs.nixfmt-tree;
 
           devshells.default = {
             packages = with pkgs; [
