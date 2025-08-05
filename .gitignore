@@ -1,2 +1,3 @@
-public/
 .direnv/
+node_modules/
+outputs/
