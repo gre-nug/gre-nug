@@ -12,11 +12,10 @@ add-image-links: 0
 
 # Grenoble Nix User Group
 
-Bienvenue sur la page web de GreNUG, le groupe des utilisateurs grenoblois de Nix.<br>
-L'objectif est de se rassembler pour échanger et apprendre autour de Nix et NixOS.
+Welcome to the **GreNUG** website, the Grenoble Nix user group.<br>
+GreNUG's goal is to gather to talk about Nix(OS) and learn new things.
 
-
-- **Salon Matrix:** [grenug:matrix.org](https://matrix.to/#/#grenug:matrix.org)
+- **Matrix room:** [grenug:matrix.org](https://matrix.to/#/#grenug:matrix.org)
 - **bsky:** [grenug.fr](https://bsky.app/profile/grenug.fr)
 - **Mastodon:** <a rel="me" href="https://mastodon.social/@grenug">@grenug@mastodon.social</a>
 - **email:** [contact@grenug.fr](mailto:contact@grenug.fr)
