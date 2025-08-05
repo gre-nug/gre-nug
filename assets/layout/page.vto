@@ -1,0 +1,26 @@
+---
+layout: main.vto
+---
+<article lang="en-US" class="prose container mx-auto">
+  {{ content }}
+  {{ if footnotes.length }}
+    <hr>
+    <ol class="text-xs">
+      {{ for note of footnotes }}
+        <li id="{{ note.id }}">
+          <span class="flex flex-row items-center">
+            <span class="not-prose">{{ note.content }}</span>
+            <a href="#{{ note.refId }}" class="footnote-backref">&crarr;</a>
+          </span>
+        </li>
+      {{ /for }}
+    </ol>
+  {{ /if }}
+  {{ if nav.menu("/", "hidden=false").children }}
+    <nav class="container mx-auto">
+      <hr>
+      {{ include "list.vto" }}
+      <hr>
+    </nav>
+  {{ /if }}
+</article>

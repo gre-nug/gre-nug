@@ -1,0 +1,39 @@
+{
+  "imports": {
+    "config": "./_config.ts",
+    "lume/": "https://deno.land/x/lume@v3.0.5/",
+    "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.11/jsx-runtime.ts",
+    "lume/plugins/markdown/": "https://deno.land/x/lume_markdown_plugins@v0.7.1/",
+    "lume/plugins/markdown/figure.ts": "https://raw.githubusercontent.com/stepbrobd/figure/2024.704.0/mod.ts",
+    "shiki/": "https://deno.land/x/lume_shiki@0.0.18/"
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "build": "deno task lume",
+    "serve": "deno task lume -s"
+  },
+  "compilerOptions": {
+    "types": [
+      "lume/types.ts"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "lume"
+  },
+  "fmt": {
+    "useTabs": false,
+    "indentWidth": 2,
+    "lineWidth": 120,
+    "semiColons": true,
+    "singleQuote": false,
+    "proseWrap": "preserve"
+  },
+  "unstable": [
+    "temporal",
+    "fmt-component"
+  ],
+  "lint": {
+    "plugins": [
+      "https://deno.land/x/lume@v3.0.5/lint.ts"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+<nav class="flex flex-col gap-2">
+  {{ for item of nav.menu("/", "hidden=false", "created=desc").children }}
+    <div class="grid grid-cols-3 md:grid-cols-5 gap-4">
+      <time>{{ item.data.created |> date("yyyy-MM-dd") }}</time>
+      <a href="{{ item.data.url }}" class="col-span-2 md:col-span-4">{{ item.data.title }}</a>
+    </div>
+  {{ /for }}
+</nav>

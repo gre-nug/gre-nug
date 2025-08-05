@@ -1,0 +1,10 @@
+<header class="prose">
+  <h1>{{ title }}</h1>
+  <small class="text-nord-9 flex flex-row items-center justify-start gap-2">
+    <time>{{ modified |> date("yyyy-MM-dd") }}</time>
+    <span>&middot;</span>
+    <span>{{ readingInfo.words }} words</span>
+    <span>&middot;</span>
+    <span>{{ readingInfo.minutes }} min read</span>
+  </small>
+</header>
