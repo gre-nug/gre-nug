@@ -21,6 +21,12 @@ Whether you're a beginner or an advanced user, you're welcome to join and share 
 - Mastodon: [@grenug@mastodon.social](https://mastodon.social/@grenug)
 - Email: [contact@grenug.fr](mailto:contact@grenug.fr)
 
+## Events
+
+| When (UTC+2)             | What                                                         | Where | Summary                                   |
+| ------------------------ | ------------------------------------------------------------ | ----- | ----------------------------------------- |
+| 2025-08-09 14:00 ~ 15:00 | [GreNUG Office Hour #1](https://discourse.nixos.org/t/67687) | Zoom  | Community chat on ideas for future events |
+
 ## Organizers
 
 | Name                                             | Role      | Period              |
