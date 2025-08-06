@@ -2,18 +2,28 @@
 title: Grenoble Nix User Group
 description: GreNUG - Grenoble Nix User Group
 created: 2025-08-05
-modified: 2025-08-05
+modified: 2025-08-06
 url: /index.html
 ---
 
-Welcome to the GreNUG website, the Grenoble Nix user group.
+> The first GreNUG office hour will be held on **August 9 2025**, over [Zoom (meeting password in Matrix)](https://univ-grenoble-alpes-fr.zoom.us/j/97910539613) from **14:00** to **15:00**.
+> Join us to share what you expect from this user group, what kinds of events you'd like to see in the future, and how we can help you with Nix and NixOS!
 
-GreNUG's goal is to gather to talk about Nix(OS) and learn new things.
+![GreNUG](/assets/static/logo.png)
 
-- Matrix: [grenug:matrix.org](https://matrix.to/#/#grenug:matrix.org)
+Grenoble Nix User Group is a community of developers, sysadmins, students, and enthusiasts who use Nix and NixOS.
+We organize meetups to exchange ideas, solve problems, and learn about Nix's unique approach to package management and system configuration.
+Whether you're a beginner or an advanced user, you're welcome to join and share in the discussion.
 
+- GitHub: [gre-nug](https://github.com/gre-nug)
+- Matrix: [#grenug:matrix.org](https://matrix.to/#/#grenug:matrix.org)
 - Bluesky: [@grenug.fr](https://bsky.app/profile/grenug.fr)
-
 - Mastodon: [@grenug@mastodon.social](https://mastodon.social/@grenug)
-
 - Email: [contact@grenug.fr](mailto:contact@grenug.fr)
+
+## Organizers
+
+| Name                                             | Role      | Period              |
+| ------------------------------------------------ | --------- | ------------------- |
+| [Yifei Sun](https://github.com/stepbrobd)        | Organizer | Since Aug 2025      |
+| [Gaétan Lepage](https://github.com/GaetanLepage) | Founder   | Dec 2022 – Aug 2025 |
