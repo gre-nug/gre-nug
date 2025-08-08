@@ -9,7 +9,7 @@
       };
 
       devShells.default = pkgs.mkShell {
-        packages = with pkgs; [ deno ];
+        packages = with pkgs; [ deno wrangler ];
       };
 
       formatter = pkgs.writeShellScriptBin "formatter" ''
