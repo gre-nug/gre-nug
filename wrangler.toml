@@ -1,0 +1,9 @@
+name = "grenug"
+
+compatibility_date = "2025-05-05"
+preview_urls = true
+workers_dev = true
+
+[assets]
+directory = "./outputs/"
+not_found_handling = "404-page"
