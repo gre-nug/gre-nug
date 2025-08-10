@@ -2,12 +2,12 @@
 title: Grenoble Nix User Group
 description: GreNUG - Grenoble Nix User Group
 created: 2025-08-05
-modified: 2025-08-06
+modified: 2025-08-10
 url: /index.html
 ---
 
-> The first GreNUG office hour will be held on **August 9 2025**, over [Zoom (meeting password in Matrix)](https://univ-grenoble-alpes-fr.zoom.us/j/97910539613) from **14:00** to **15:00**.
-> Join us to share what you expect from this user group, what kinds of events you'd like to see in the future, and how we can help you with Nix and NixOS!
+> The GreNUG OH will be held **every Saturday in August** over [Zoom (meeting password in Matrix)](https://univ-grenoble-alpes-fr.zoom.us/j/97910539613) from **14:00** to **15:00**.
+> Join us to share what you expect from the user group, what kinds of events you'd like to see in the future, and how we can help you with Nix and NixOS!
 
 ![GreNUG](/assets/static/logo.png)
 
@@ -23,9 +23,12 @@ Whether you're a beginner or an advanced user, you're welcome to join and share 
 
 ## Events
 
-| When (UTC+2)             | What                                                         | Where | Summary                                   |
-| ------------------------ | ------------------------------------------------------------ | ----- | ----------------------------------------- |
-| 2025-08-09 14:00 ~ 15:00 | [GreNUG Office Hour #1](https://discourse.nixos.org/t/67687) | Zoom  | Community chat on ideas for future events |
+| When (UTC+2)             | What                                                           | Where | Summary                                   |
+| ------------------------ | -------------------------------------------------------------- | ----- | ----------------------------------------- |
+| 2025-08-09 14:00 ~ 15:00 | [GreNUG Office Hour #1](https://discourse.nixos.org/t/67687)   | Zoom  | Community chat on ideas for future events |
+| 2025-08-16 14:00 ~ 15:00 | [GreNUG Office Hour #2](https://discourse.nixos.org/t/67687/2) | Zoom  | Community chat on ideas for future events |
+| 2025-08-23 14:00 ~ 15:00 | [GreNUG Office Hour #3](https://discourse.nixos.org/t/67687/2) | Zoom  | Community chat on ideas for future events |
+| 2025-08-30 14:00 ~ 15:00 | [GreNUG Office Hour #4](https://discourse.nixos.org/t/67687/2) | Zoom  | Community chat on ideas for future events |
 
 ## Organizers
 
