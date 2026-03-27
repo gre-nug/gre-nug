@@ -10,7 +10,7 @@
   "tasks": {
     "lume": {
       "description": "Run Lume command",
-      "command": "deno run -P=lume lume/cli.ts"
+      "command": "deno run --allow-import -P=lume lume/cli.ts"
     },
     "build": {
       "description": "Build the site for production",
