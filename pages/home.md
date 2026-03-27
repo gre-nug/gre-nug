@@ -2,12 +2,9 @@
 title: Grenoble Nix User Group
 description: GreNUG - Grenoble Nix User Group
 created: 2025-08-05
-modified: 2025-08-10
+modified: 2026-03-27
 url: /index.html
 ---
-
-> The GreNUG OH will be held **every Saturday in August** over Jitsi Meet: <https://meet.grenug.fr/office-hours> from **14:00** to **15:00**.
-> Join us to share what you expect from the user group, what kinds of events you'd like to see in the future, and how we can help you with Nix and NixOS!
 
 ![GreNUG](/assets/static/logo.png)
 
