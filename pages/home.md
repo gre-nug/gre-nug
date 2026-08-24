@@ -2,7 +2,7 @@
 title: Grenoble Nix User Group
 description: GreNUG - Grenoble Nix User Group
 created: 2025-08-05
-modified: 2026-03-27
+modified: 2026-08-24
 url: /index.html
 ---
 
@@ -20,12 +20,13 @@ Whether you're a beginner or an advanced user, you're welcome to join and share 
 
 ## Events
 
-| When (UTC+2)             | What                                                           | Where | Summary                                   |
-| ------------------------ | -------------------------------------------------------------- | ----- | ----------------------------------------- |
-| 2025-08-09 14:00 ~ 15:00 | [GreNUG Office Hour #1](https://discourse.nixos.org/t/67687)   | Zoom  | Community chat on ideas for future events |
-| 2025-08-16 14:00 ~ 15:00 | [GreNUG Office Hour #2](https://discourse.nixos.org/t/67687/2) | Jitsi | Community chat on ideas for future events |
-| 2025-08-23 14:00 ~ 15:00 | [GreNUG Office Hour #3](https://discourse.nixos.org/t/67687/2) | Jitsi | Community chat on ideas for future events |
-| 2025-08-30 14:00 ~ 15:00 | [GreNUG Office Hour #4](https://discourse.nixos.org/t/67687/2) | Jitsi | Community chat on ideas for future events |
+| When (UTC+2)             | What                                                           | Where           | Summary                                   |
+| ------------------------ | -------------------------------------------------------------- | --------------- | ----------------------------------------- |
+| 2025-08-09 14:00 ~ 15:00 | [GreNUG Office Hour #1](https://discourse.nixos.org/t/67687)   | Zoom            | Community chat on ideas for future events |
+| 2025-08-16 14:00 ~ 15:00 | [GreNUG Office Hour #2](https://discourse.nixos.org/t/67687/2) | Jitsi           | Community chat on ideas for future events |
+| 2025-08-23 14:00 ~ 15:00 | [GreNUG Office Hour #3](https://discourse.nixos.org/t/67687/2) | Jitsi           | Community chat on ideas for future events |
+| 2025-08-30 14:00 ~ 15:00 | [GreNUG Office Hour #4](https://discourse.nixos.org/t/67687/2) | Jitsi           | Community chat on ideas for future events |
+| 2026-09-11 16:00 ~ 18:00 | [GreNUG Meetup #1](/2026-09-11)                                | IMAG Auditorium | Offline meetup #1 (talks and workshops)   |
 
 ## Organizers
 
