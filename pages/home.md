@@ -26,7 +26,7 @@ Whether you're a beginner or an advanced user, you're welcome to join and share 
 | 2025-08-16 14:00 ~ 15:00 | [GreNUG Office Hour #2](https://discourse.nixos.org/t/67687/2) | Jitsi           | Community chat on ideas for future events |
 | 2025-08-23 14:00 ~ 15:00 | [GreNUG Office Hour #3](https://discourse.nixos.org/t/67687/2) | Jitsi           | Community chat on ideas for future events |
 | 2025-08-30 14:00 ~ 15:00 | [GreNUG Office Hour #4](https://discourse.nixos.org/t/67687/2) | Jitsi           | Community chat on ideas for future events |
-| 2026-09-11 16:00 ~ 18:00 | [GreNUG Meetup #1](/2026-09-11)                                | IMAG Auditorium | Offline meetup #1 (talks and workshops)   |
+| 2026-09-11 16:00 ~ 18:00 | [GreNUG Meetup #1](/2026-09-11/)                               | IMAG Auditorium | Offline meetup #1 (talks and workshops)   |
 
 ## Organizers
 
