@@ -23,13 +23,7 @@ import toc from "lume/plugins/markdown/toc.ts";
 import shiki from "shiki/mod.ts";
 import tailwindcss from "lume/plugins/tailwindcss.ts";
 
-const markdown = {
-  plugins: [
-    [figure, { decoding: true, figure: true, image_size: true, base_path: Deno.cwd() }],
-  ],
-};
-
-// setup + markdown preprocessing
+// setup
 const site = lume({
   location: new URL("https://grenug.fr"),
   src: "/",
@@ -38,9 +32,11 @@ const site = lume({
   cssFile: "/assets/style/lume.css",
   fontsFolder: "/assets/style",
   server: { debugBar: false },
-}, {
-  markdown,
 });
+
+// markdown preprocessing
+site.hooks.addMarkdownItPlugin(figure, { decoding: true, figure: true, image_size: true, base_path: Deno.cwd() });
+
 // ignore and add
 site
   .ignore("flake.nix")
