@@ -1,0 +1,40 @@
+name: GitHub Pages
+
+on:
+  pull_request:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Install
+        uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            trusted-public-keys = cache.ysun.co-1:WxPYwT5g3kt9XhUhHPpNLZKI9HIOsVVAuqSHpok8Qt4= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
+            substituters = https://cache.ysun.co https://cache.nixos.org/
+      - name: Build
+        run: nix develop --command deno task build
+      - name: Upload
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: outputs
+      - name: Deploy
+        id: deployment
+        if: github.event_name != 'pull_request'
+        uses: actions/deploy-pages@v5
