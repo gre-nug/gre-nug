@@ -9,7 +9,7 @@
       };
 
       devShells.default = pkgs.mkShell {
-        packages = with pkgs; [ deno wrangler ];
+        packages = with pkgs; [ deno nixpkgs-fmt ];
       };
 
       formatter = pkgs.writeShellScriptBin "formatter" ''
@@ -45,6 +45,6 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     parts.url = "github:hercules-ci/flake-parts";
     parts.inputs.nixpkgs-lib.follows = "nixpkgs";
-    systems.url = "github:nix-systems/default";
+    systems.url = "github:nix-systems/triplet";
   };
 }
