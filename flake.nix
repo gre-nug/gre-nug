@@ -1,5 +1,5 @@
 {
-  outputs = { self, nixpkgs, parts, systems } @ inputs: parts.lib.mkFlake { inherit inputs; } {
+  outputs = { nixpkgs, parts, systems, ... } @ inputs: parts.lib.mkFlake { inherit inputs; } {
     systems = import systems;
 
     perSystem = { lib, pkgs, system, ... }: {
@@ -16,28 +16,6 @@
         ${lib.getExe pkgs.deno} fmt .
         ${lib.getExe pkgs.nixpkgs-fmt} .
       '';
-
-      packages.default = pkgs.stdenvNoCC.mkDerivation {
-        pname = "gre-nug";
-        version = "0-git-${self.rev or self.dirtyRev}";
-        src = ./.;
-        outputHashAlgo = "sha256";
-        outputHashMode = "recursive";
-        outputHash = "sha256-gCoB3ti/4p60S2djsWOC67dQ5JXu0/nZVjIeM5aN4pQ=";
-        nativeBuildInputs = [ pkgs.deno ];
-        buildPhase = ''
-          runHook preBuild
-          export HOME=$TMPDIR
-          deno task build
-          runHook postBuild
-        '';
-        installPhase = ''
-          runHook preInstall
-          mkdir -p $out/var/www/html
-          cp -r outputs/* $out/var/www/html/
-          runHook postInstall
-        '';
-      };
     };
   };
 
